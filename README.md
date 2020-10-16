@@ -22,7 +22,11 @@ dotnet watch run
 ## Post using curl
 ### There is a json file that contains post data
 https://gist.github.com/subfuzion/08c5d85437d5d4f00e58 - cheatsheet to curl post
+```
 curl -d "{\"name\": \"walk dog\",\"isComplete\": true}" -H "Content-Type: application/json" -X POST http://localhost:5000/api/TodoItems
+```
 
 Grab the data you just stored!
+```
 curl -k -i -H "Accept: application/json" -H "Content-Type: application/json" -X GET https://localhost:5001/api/TodoItems/1
+```

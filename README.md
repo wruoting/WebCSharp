@@ -1,4 +1,4 @@
-https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio-code \n
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-3.1&tabs=visual-studio-code
 NOTE: this is specific to v 3.1
 ## Create the webproject with dependencies
 dotnet new webapi -o TodoApi
@@ -10,11 +10,11 @@ code -r ../TodoApi
 ## Add some code to the Startup.cs (Follow site)
 
 ## Scaffold a controller
-dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design \n
-dotnet add package Microsoft.EntityFrameworkCore.Design \n
-dotnet tool install --global dotnet-aspnet-codegenerator \n
-dotnet tool update -g Dotnet-aspnet-codegenerator \n
-dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers \n
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool update -g Dotnet-aspnet-codegenerator
+dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers
 
 ## Start the web server
 dotnet watch run
